@@ -17,7 +17,7 @@ class DecodingTestCase(TestCase):
         self.assertEqual(u'ê', htmlentities.decode('&ecirc;'))
 
     def test_decode_complex_unicode_text(self):
-        """This test fails because the regular expression does not recognize U&"""
+        """Validates the encoding and decoding of sample text"""
         text = u"Übergroße Äpfel mit Würmern"
 
         # result string: &Uuml;bergro&szlig;e &Auml;pfel mit W&uuml;rmern
