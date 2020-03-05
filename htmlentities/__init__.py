@@ -1,4 +1,9 @@
-from htmlentitydefs import codepoint2name, name2codepoint
+try:
+    # python 3 compat
+    from html.entities import codepoint2name, name2codepoint
+    unichr = chr
+except ImportError:
+    from htmlentitydefs import codepoint2name, name2codepoint
 
 import re
 
