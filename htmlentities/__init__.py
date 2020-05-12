@@ -15,8 +15,9 @@ def encode(source):
     new_source = ''
 
     for char in source:
-        if ord(char) in codepoint2name:
-            char = '&%s;' % codepoint2name[ord(char)]
+        val = ord(char)
+        if val in codepoint2name:
+            char = '&%s;' % codepoint2name[val]
         new_source += char
 
     return new_source
