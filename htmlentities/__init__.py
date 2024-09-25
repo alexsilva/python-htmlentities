@@ -8,7 +8,7 @@ except ImportError:
 import re
 
 
-__version__ = '0.4.0'
+__version__ = '0.4.1'
 
 
 def encode(source, mcodepoint2name=None):
